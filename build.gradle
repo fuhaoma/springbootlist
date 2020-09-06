@@ -15,7 +15,9 @@ configurations {
 }
 
 repositories {
-    mavenCentral()
+    mavenLocal()
+    maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+    maven { url 'http://maven.oschina.net/content/groups/public/' }
 }
 
 dependencies {
@@ -27,7 +29,7 @@ dependencies {
     //mysql驱动
     implementation "mysql:mysql-connector-java:8.0.16"
     //excel解析
-	implementation "com.alibaba:easyexcel:2.2.6"
+    implementation "com.alibaba:easyexcel:2.2.6"
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
 }
