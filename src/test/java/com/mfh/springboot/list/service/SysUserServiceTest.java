@@ -14,6 +14,6 @@ public class SysUserServiceTest extends RootTest{
 
   @Test
  public void get() {
-    List<SysUser> sysUsers = sysUserService.get();
+//    List<SysUser> sysUsers = sysUserService.get();
   }
 }

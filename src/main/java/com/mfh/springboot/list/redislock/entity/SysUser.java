@@ -1,9 +1,12 @@
 package com.mfh.springboot.list.redislock.entity;
 
+import com.mfh.springboot.list.redislock.entity.SuperEntity;
+
 import lombok.Data;
 import lombok.experimental.Accessors;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -11,11 +14,12 @@ import java.time.LocalDateTime;
 @Data
 @Accessors(chain = true)
 @Entity
-public class SysUser implements SuperEntity {
+public class SysUser {
   /**
    * 主键
    */
   @Id
+  @GeneratedValue
   private String id;
   /**
    * 创建时间

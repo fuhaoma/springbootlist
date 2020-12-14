@@ -30,8 +30,8 @@ dependencies {
     implementation "mysql:mysql-connector-java:8.0.16"
     //excel解析
     implementation "com.alibaba:easyexcel:2.2.6"
-    compileOnly 'org.projectlombok:lombok'
-    annotationProcessor 'org.projectlombok:lombok'
+    implementation 'org.projectlombok:lombok'
+    implementation 'org.projectlombok:lombok'
 }
 
 test {

@@ -10,8 +10,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-public class DemoDataListener extends AnalysisEventListener<Family> {
-  private static final Logger LOGGER = LoggerFactory.getLogger(DemoDataListener.class);
+public class DemoDataWListener extends AnalysisEventListener<Family> {
+  private static final Logger LOGGER = LoggerFactory.getLogger(DemoDataWListener.class);
   /**
    * 每隔5条存储数据库，实际使用中可以3000条，然后清理list ，方便内存回收
    */
@@ -23,7 +23,7 @@ public class DemoDataListener extends AnalysisEventListener<Family> {
    * 假设这个是一个DAO，当然有业务逻辑这个也可以是一个service。当然如果不用存储这个对象没用。
    */
 //  private DemoDAO demoDAO;
-  public DemoDataListener() {
+  public DemoDataWListener() {
 //     这里是demo，所以随便new一个。实际使用如果到了spring,请使用下面的有参构造函数
 //    demoDAO = new DemoDAO();
   }

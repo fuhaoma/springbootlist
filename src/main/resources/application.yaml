@@ -9,8 +9,9 @@ spring:
         show-sql: true #控制台是否打印
         format_sql: true #格式化sql语句
         use_sql_comments: true  #指出是什么操作生成了该语句
+    generate-ddl: true
   datasource:
-    url: jdbc:mysql://localhost:3306/avengers?useSSL=false&serverTimezone=Asia/Shanghai&characterEncoding=utf8
+    url: jdbc:mysql://192.168.2.124:3306/avengers?useSSL=false&serverTimezone=Asia/Shanghai&characterEncoding=utf8
     username: root
     password: 123456
     driver-class-name: com.mysql.cj.jdbc.Driver
